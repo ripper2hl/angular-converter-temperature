@@ -4,7 +4,7 @@
   "description": "Angular JS conversion of temperature module",
   "main": "index.js",
   "scripts": {
-    "coveralls" : "node node_modules/gulp/bin/gulp" ,
+    "coveralls" : "node node_modules/gulp/bin/gulp coveralls" ,
     "pretest": "npm install && node node_modules/bower/bin/bower install",
     "test": "node node_modules/karma/bin/karma start test/karma.conf.js"
   },
