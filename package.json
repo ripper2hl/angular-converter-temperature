@@ -4,7 +4,8 @@
   "description": "Angular JS conversion of temperature module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest" : "npm install && node node_modules/bower/bin/bower install",
+    "test": "node node_modules/karma/bin/karma start test/karma.conf.js"
   },
   "repository": {
     "type": "git",
