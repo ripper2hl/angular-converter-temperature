@@ -1,0 +1,19 @@
+{
+  "name": "angular-converter-temperature",
+  "version": "1.0.0",
+  "description": "Angular JS conversion of temperature module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "angular",
+      "framework",
+      "browser",
+      "converter",
+      "temperature",
+      "client-side"
+    ],
+    "author": "Jesus Perales <jesus.peralesmr@uanl.edu.mx>",
+    "license": "MIT"
+  }
