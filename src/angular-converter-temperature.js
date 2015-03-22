@@ -46,10 +46,14 @@
     }
 
     return function(number,from,to){
-      if(!isNaN(number)){
-      var number = parseFloat(number);
+
+      if( isNaN ( number ) ) {
+        return '';
+        }
+        
+        number = parseFloat(number);
         switch(from+to){
-          
+
           case 'kc' :
             return kelvinCelsius(number);
 
@@ -80,9 +84,6 @@
           default :
           return kelvinCelsius(number);
         }
-      }else{
-        return '';
-      }
     };
   });
 

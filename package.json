@@ -4,7 +4,8 @@
   "description": "Angular JS conversion of temperature module",
   "main": "index.js",
   "scripts": {
-    "pretest" : "npm install && node node_modules/bower/bin/bower install",
+    "coveralls" : "node node_modules/gulp/bin/gulp" ,
+    "pretest": "npm install && node node_modules/bower/bin/bower install",
     "test": "node node_modules/karma/bin/karma start test/karma.conf.js"
   },
   "repository": {
@@ -23,6 +24,8 @@
   "license": "MIT",
   "devDependencies": {
     "bower": "^1.3.12",
+    "gulp": "^3.8.11",
+    "gulp-coveralls": "^0.1.3",
     "jasmine-core": "^2.2.0",
     "karma": "^0.12.31",
     "karma-coverage": "^0.2.7",
