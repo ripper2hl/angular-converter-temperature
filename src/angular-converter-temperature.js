@@ -49,6 +49,7 @@
       if(!isNaN(number)){
       var number = parseFloat(number);
         switch(from+to){
+          
           case 'kc' :
             return kelvinCelsius(number);
 
