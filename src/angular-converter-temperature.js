@@ -5,52 +5,12 @@
 
   app.filter( '$converter-temperature' , function ( ) {
 
-    function kelvinCelsius (number){
-      var celsius = number - 272.15;
-      celsius = (celsius).toFixed();
-      return celsius + '°C';
-    }
-
-     function kelvinFahrenheit (number){
-      var fahrenheit = (number - 273.15)* 1.8000 + 32.00;
-      fahrenheit = (fahrenheit).toFixed();
-      return fahrenheit + '°F';
-    }
-
-    function celsiusKelvin (number){
-      var kelvin = number + 273;
-      kelvin = (kelvin).toFixed(0);
-      return kelvin + '°K';
-    }
-
-    function celsiusFahrenheit (number){
-      var fahrenheit = number * 1.8000 + 32.00;
-      fahrenheit = fahrenheit.toFixed();
-      return fahrenheit + '°F';
-    }
-
-   function fahrenheitCelsius (number){
-      var celsius = (number-32)/1.8000;
-      celsius = celsius.toFixed();
-      return celsius + '°C';
-    }
-
-  function fahrenheitKelvin (number){
-      var kelvin = ((number -32)/1.8000) + 273.15;
-      kelvin = kelvin.toFixed();
-      return kelvin + '°K';
-    }
-
-    function noConvert (number,scale){
-      return number.toFixed() + scale;
-    }
-
     return function(number,from,to){
 
       if( isNaN ( number ) ) {
         return '';
         }
-        
+
         number = parseFloat(number);
         switch(from+to){
 
@@ -86,5 +46,45 @@
         }
     };
   });
+  
+  function kelvinCelsius (number){
+    var celsius = number - 272.15;
+    celsius = (celsius).toFixed();
+    return celsius + '°C';
+  }
+
+   function kelvinFahrenheit (number){
+    var fahrenheit = (number - 273.15)* 1.8000 + 32.00;
+    fahrenheit = (fahrenheit).toFixed();
+    return fahrenheit + '°F';
+  }
+
+  function celsiusKelvin (number){
+    var kelvin = number + 273;
+    kelvin = (kelvin).toFixed(0);
+    return kelvin + '°K';
+  }
+
+  function celsiusFahrenheit (number){
+    var fahrenheit = number * 1.8000 + 32.00;
+    fahrenheit = fahrenheit.toFixed();
+    return fahrenheit + '°F';
+  }
+
+ function fahrenheitCelsius (number){
+    var celsius = (number-32)/1.8000;
+    celsius = celsius.toFixed();
+    return celsius + '°C';
+  }
+
+function fahrenheitKelvin (number){
+    var kelvin = ((number -32)/1.8000) + 273.15;
+    kelvin = kelvin.toFixed();
+    return kelvin + '°K';
+  }
+
+  function noConvert (number,scale){
+    return number.toFixed() + scale;
+  }
 
 })();
